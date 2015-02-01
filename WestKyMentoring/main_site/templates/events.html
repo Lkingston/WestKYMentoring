@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Events page for you</title>
+</head>
+<body>
+   <table color='red'>
+<tr><td><a href="#">Events</a></td></tr>
+<tr></tr>
+   </table>
+
+    <table align="centre" Cellpadding="2" border="2">
+    	{% for event in events %}
+<tr><td>{{event.event_name}}</td><td>{{event.date}}</td><td>{{event.start_time}}</td><td>{{event.end_time}}</td><td>{{event.location}}</td></tr>
+<tr></tr>
+{% endfor %}
+   </table>
+
+
+
+
+</body>
+</html>
+
+
