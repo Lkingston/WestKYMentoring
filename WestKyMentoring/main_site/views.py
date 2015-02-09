@@ -13,4 +13,6 @@ def events(request):
 
 	}) #render
 
-# Create your views here.
+def test(request):
+    return render(request,'template_1.html')
+
